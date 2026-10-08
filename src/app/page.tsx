@@ -116,8 +116,8 @@ function Downloads() {
         <div className="mt-10 grid gap-5 sm:grid-cols-2">
           {t.downloads.files.map((f, i) => (
             <div key={f.name} className="flex items-center justify-between gap-4 rounded-[24px] border border-line bg-paper-warm p-6">
-              <div>
-                <code className="font-mono text-[15px] font-medium">{f.name}</code>
+              <div className="min-w-0">
+                <code className="font-mono text-[15px] font-medium break-all">{f.name}</code>
                 <p className="mt-1 text-[14px] text-ink/60">{f.desc}</p>
               </div>
               <a href={paths[i]} download className="shrink-0 rounded-full border border-line px-5 py-2.5 text-[15px] font-semibold hover:border-ink">
