@@ -75,6 +75,6 @@
     "Areas are approximate, computed with an equirectangular projection centred on Toronto; stated_area is the city's own figure when present.",
     "Addresses join parcels by point-in-polygon; ward comes from the address record when present, else from the parcel centroid.",
     "flag_stacked marks parcels with 10+ addresses (condos, stacked units sharing one legal parcel).",
-    "The full parcel_spine.csv is not committed (size); parcel_spine_sample.csv is a 25,000-row stratified sample, 1,000 per ward."
+    "The full parcel_spine.csv is not committed (size); parcel_spine_sample.csv is a 25,684-row stratified sample, 1,000 per ward plus 684 parcels that could not be placed in a ward."
   ]
 }
