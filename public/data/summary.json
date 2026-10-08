@@ -1,0 +1,80 @@
+{
+  "generated": "2026-10-08",
+  "sources": {
+    "property_boundaries": "City of Toronto Open Data, Property Boundaries",
+    "address_points": "City of Toronto Open Data, Address Points (Toronto One Address Repository)"
+  },
+  "id_scheme": "TOP-<PARCELID>: Toronto Open Parcel + the city's integer PARCELID",
+  "total_parcels": 498477,
+  "total_source_rows": 498477,
+  "multi_row_parcels": 0,
+  "parcels_with_addresses": 475438,
+  "parcels_without_addresses": 23039,
+  "addresses_total": 525343,
+  "addresses_matched": 525085,
+  "stacked_parcels_ge10_addresses": 947,
+  "parcels_with_ward": 497793,
+  "parcels_with_neighbourhood": 497755,
+  "feature_types": {
+    "COMMON": 491725,
+    "CONDO": 3769,
+    "RESERVE": 2983
+  },
+  "size_buckets_m2": {
+    ">10000 m2": 6478,
+    "500-2000 m2": 160604,
+    "200-500 m2": 230994,
+    "2000-10000 m2": 13857,
+    "<200 m2": 86544
+  },
+  "top_wards_by_parcels": [
+    [
+      "14",
+      29337
+    ],
+    [
+      "03",
+      28504
+    ],
+    [
+      "19",
+      27500
+    ],
+    [
+      "09",
+      27100
+    ],
+    [
+      "25",
+      26053
+    ],
+    [
+      "02",
+      25620
+    ],
+    [
+      "08",
+      24740
+    ],
+    [
+      "20",
+      24494
+    ],
+    [
+      "05",
+      22541
+    ],
+    [
+      "04",
+      21298
+    ]
+  ],
+  "sample_rows": 25684,
+  "methodology_notes": [
+    "One spine row per unique PARCELID in Property Boundaries; repeated PARCELIDs (multi-part geometries) are merged, source_rows counts the parts.",
+    "Areas are approximate, computed with an equirectangular projection centred on Toronto; stated_area is the city's own figure when present.",
+    "Addresses join parcels by point-in-polygon; ward comes from the address record when present, else from the parcel centroid.",
+    "flag_stacked marks parcels with 10+ addresses (condos, stacked units sharing one legal parcel).",
+    "The full parcel_spine.csv is not committed (size); parcel_spine_sample.csv is a 25,000-row stratified sample, 1,000 per ward."
+  ]
+}
